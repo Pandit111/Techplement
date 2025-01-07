@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding with Mayank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Coding with Mayank</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Learn, Grow, Succeed</h2>
+            <p>Discover top-notch courses to advance your skills in coding, design, and more.</p>
+            <a href="#courses" class="btn-primary">Explore Courses</a>
+        </div>
+    </section>
+
+    <section id="courses" class="section">
+        <h2>Our Popular Courses</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <h3>Full Stack Development</h3>
+                <p>Master front-end and back-end development with real-world projects.</p>
+                <p class="price">$199</p>
+                <button class="btn-secondary enroll-btn" data-course="Full Stack Development">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <h3>Data Science</h3>
+                <p>Learn data analysis, visualization, and machine learning techniques.</p>
+                <p class="price">$249</p>
+                <button class="btn-secondary enroll-btn" data-course="Data Science">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <h3>UI/UX Design</h3>
+                <p>Design stunning and user-friendly interfaces for apps and websites.</p>
+                <p class="price">$149</p>
+                <button class="btn-secondary enroll-btn" data-course="UI/UX Design">Enroll Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>At Coding with Mayank, we believe in empowering learners with quality education. Explore a wide range of courses taught by industry experts and accelerate your career growth.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Coding with Mayank. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Modal for Enrollment -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Enrollment Confirmation</h3>
+            <p id="course-name"></p>
+            <p>Thank you for choosing this course! We will contact you shortly.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
